@@ -1,12 +1,3 @@
-/**
- * generate-thumbs.mjs
- *
- * Генерує мініатюри зображень з /public/images → /public/images/thumbs
- * Запуск: node scripts/generate-thumbs.mjs
- *
- * Встановлення залежності (якщо ще немає):
- *   npm install sharp --save-dev
- */
 
 import sharp from 'sharp';
 import { readdir, mkdir } from 'node:fs/promises';
