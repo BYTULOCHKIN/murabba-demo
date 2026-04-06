@@ -24,7 +24,7 @@ export const IMAGES: MarqueeImage[] = [
         alt: 'New Public Plaza',
     },
     { src: '/images/05_Stadium_Axis_1.png', thumb: '/images/thumbs/05_Stadium Axis 1.webp', alt: 'Stadium Axis' },
-    { src: '/images/06_Urban Valley 1.png', thumb: '/images/thumbs/06_Urban Valley 1.webp', alt: 'Urban Valley' },
+    { src: '/images/06_Urban_Valley_1.png', thumb: '/images/thumbs/06_Urban Valley 1.webp', alt: 'Urban Valley' },
     {
         src: '/images/ATKINS_NewMurrabah02_CGI10_05_1.png',
         thumb: '/images/thumbs/ATKINS_NewMurrabah02_CGI10_05 1.webp',
