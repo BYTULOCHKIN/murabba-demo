@@ -1,0 +1,33 @@
+/* ── Page ────────────────────────────────────────────────────────────────────── */
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark-900);
+    color: var(--color-white-100);
+    background-image: url("/public/images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 5rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+
+    .title {
+        max-width: 20rem;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.5rem; /* 128.571% */
+        text-transform: uppercase;
+    }
+
+    .logo {
+        width: 18.75rem;
+        height: 15.625rem;
+    }
+}

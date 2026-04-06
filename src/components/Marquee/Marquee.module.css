@@ -1,0 +1,94 @@
+/* ── Контейнер ──────────────────────────────────────────────────────────── */
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ── Рядок ──────────────────────────────────────────────────────────────── */
+.row {
+    overflow: hidden;
+}
+
+/* ── Доріжка (track) ────────────────────────────────────────────────────── */
+.track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    will-change: transform;
+    animation: scroll-left 115s linear infinite;
+}
+
+/* Нижній рядок рухається у зворотньому напрямку */
+.trackReverse {
+    animation-name: scroll-right;
+}
+
+/* Пауза обох рядів при hover на контейнер */
+.container:hover .track {
+    animation-play-state: paused;
+}
+
+/* ── Картка ─────────────────────────────────────────────────────────────── */
+.card {
+    flex-shrink: 0;
+    width: 22.25rem; /* 356px */
+    height: 12.5rem; /* 200px */
+    overflow: hidden;
+    background-color: var(--color-dark-900);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.photo {
+    padding: 0 12.5rem; /* 200px */
+    object-fit: contain;
+}
+
+/* Затемнення сусідніх карток при hover на рядок */
+.row:hover .card:not(:hover) {
+    opacity: 0.45;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* ── Зображення ─────────────────────────────────────────────────────────── */
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ── Анімації ───────────────────────────────────────────────────────────── */
+
+/* Верхній рядок: вліво. -50% — бо контент подвоєний, половина = оригінал */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Нижній рядок: вправо (з -50% назад до 0) */
+@keyframes scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
