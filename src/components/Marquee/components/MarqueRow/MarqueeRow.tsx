@@ -19,12 +19,7 @@ export const MarqueeRow = ({ images, direction, indexOffset }: MarqueeRowProps) 
                                 className={clsx(s.card, 'focus-primary')}
                                 aria-label={img.alt ?? `Зображення ${indexOffset + i + 1}`}
                             >
-                                <img
-                                    src={img.thumb ?? img.src}
-                                    alt={img.alt ?? ''}
-                                    className={s.image}
-                                    draggable={false}
-                                />
+                                <img src={img.src} alt={img.alt ?? ''} className={s.image} draggable={false} />
                             </button>
                         </PhotoView>
                     );

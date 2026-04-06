@@ -1,9 +1,8 @@
-
-import sharp from 'sharp';
-import { readdir, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { mkdir, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -13,9 +12,9 @@ const SOURCE_DIR = path.resolve(__dirname, '../public/images');
 const THUMB_DIR = path.resolve(__dirname, '../public/images/thumbs');
 
 const THUMB_CONFIG = {
-    width: 640,       // px — достатньо для картки 320px при 2x DPI
-    quality: 82,      // WebP quality (0–100)
-    format: 'webp',   // конвертуємо у WebP для максимальної стиснення
+    width: 640, // px — достатньо для картки 320px при 2x DPI
+    quality: 82, // WebP quality (0–100)
+    format: 'webp', // конвертуємо у WebP для максимальної стиснення
 };
 
 const SUPPORTED_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif']);
@@ -69,7 +68,7 @@ const run = async () => {
                 .toFile(thumbPath);
 
             return { filename, thumbName };
-        }),
+        })
     );
 
     let success = 0;
