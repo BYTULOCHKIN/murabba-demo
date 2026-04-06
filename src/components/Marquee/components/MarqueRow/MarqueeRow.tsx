@@ -13,13 +13,13 @@ export const MarqueeRow = ({ images, direction, indexOffset }: MarqueeRowProps) 
                 {/* Оригінальні картки — інтерактивні, входять у галерею */}
                 {images.map((img, i) => {
                     return (
-                        <PhotoView key={`orig-${indexOffset + i}`} src={img.thumb}>
+                        <PhotoView key={`orig-${indexOffset + i}`} src={img.src}>
                             <button
                                 type="button"
                                 className={clsx(s.card, 'focus-primary')}
                                 aria-label={img.alt ?? `Зображення ${indexOffset + i + 1}`}
                             >
-                                <img src={img.src} alt={img.alt ?? ''} className={s.image} draggable={false} />
+                                <img src={img.thumb} alt={img.alt ?? ''} className={s.image} draggable={false} />
                             </button>
                         </PhotoView>
                     );
