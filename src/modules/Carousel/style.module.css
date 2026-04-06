@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    gap: 5rem;
+    justify-content: space-between;
 }
 
 .hero {
@@ -29,5 +29,11 @@
     .logo {
         width: 18.75rem;
         height: 15.625rem;
+    }
+}
+
+@media (--md) {
+    .hero {
+        flex-direction: column;
     }
 }
