@@ -18,11 +18,11 @@ export const IMAGES: MarqueeImage[] = [
     { src: '/images/ATKINS_NewMurrabah02_CGI10_051.png', alt: 'Atkins New Murrabah CGI 10-05a' },
     { src: '/images/ATKINS_NewMurrabah02_CGI11_02a 1.png', alt: 'Atkins New Murrabah CGI 11-02a' },
     { src: '/images/ATKINS_NewMurrabah02_CGI12_05 1.png', alt: 'Atkins New Murrabah CGI 12-05' },
+    { src: '/images/NewMurabba CGI25 2.png', alt: 'New Murabba CGI25 — 2' },
     { src: '/images/ATKINS_NewMurrabah02_CGI14_02 1.png', alt: 'Atkins New Murrabah CGI 14-02' },
     { src: '/images/ATKINS_NewMurrabah02_CGI15_02 1.png', alt: 'Atkins New Murrabah CGI 15-02' },
     { src: '/images/KV The Mukaab Clean_Landscape 1.png', alt: 'KV The Mukaab Clean Landscape' },
     { src: '/images/NewMurabba CGI25 1.png', alt: 'New Murabba CGI25 — 1' },
-    { src: '/images/NewMurabba CGI25 2.png', alt: 'New Murabba CGI25 — 2' },
     { src: '/images/PEDESTRIAN VIEW-ELLIPSE 1.png', alt: 'Pedestrian View Ellipse' },
 ];
 
