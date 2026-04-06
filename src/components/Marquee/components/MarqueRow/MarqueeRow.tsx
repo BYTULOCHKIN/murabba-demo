@@ -13,7 +13,7 @@ export const MarqueeRow = ({ images, direction, indexOffset }: MarqueeRowProps) 
                 {/* Оригінальні картки — інтерактивні, входять у галерею */}
                 {images.map((img, i) => {
                     return (
-                        <PhotoView key={`orig-${indexOffset + i}`} src={img.src}>
+                        <PhotoView key={`orig-${indexOffset + i}`} src={img.thumb}>
                             <button
                                 type="button"
                                 className={clsx(s.card, 'focus-primary')}
