@@ -14,7 +14,7 @@ export const Marquee = ({ images, className }: MarqueeProps) => {
 
     return (
         // Один PhotoProvider = єдина галерея для обох рядів
-        <PhotoProvider maskOpacity={0.7} photoClassName={s.photo}>
+        <PhotoProvider maskOpacity={0.7} photoWrapClassName={s.photo}>
             <div className={clsx(s.container, className)}>
                 <MarqueeRow images={row1} direction="left" indexOffset={0} />
                 <MarqueeRow images={row2} direction="right" indexOffset={mid} />
